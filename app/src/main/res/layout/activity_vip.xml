@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.help.VipActivity"
+    android:background="@drawable/s_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/vip_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/close"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/airfool_2"
+            android:textColor="@color/white"
+            android:textSize="38sp"
+            android:text="@string/bring_us_closer"
+            android:gravity="center"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/vip1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:drawableStart="@drawable/v1"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:text="@string/v1_hint"
+                android:drawablePadding="8dp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/vip2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/v2"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:text="@string/v2_hint"
+                android:drawablePadding="8dp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/vip3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/v3"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:text="@string/v3_hint"
+                android:drawablePadding="8dp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/vip4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/v4"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:text="@string/v4_hint"
+                android:drawablePadding="8dp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/vip5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/v5"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:text="@string/v5_hint"
+                android:drawablePadding="8dp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <RelativeLayout
+            android:id="@+id/vip_btn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginEnd="45dp"
+            android:paddingStart="25dp"
+            android:paddingEnd="25dp"
+            android:background="@drawable/shape_r34_gff93e6_af60ff">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="italic|bold"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_centerVertical="true"
+                android:text="@string/_19_99_month"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"
+                android:textSize="10sp"
+                android:text="@string/_4_99_week"
+                tools:ignore="RelativeOverlap,SmallSp" />
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/vip_terms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/_78707e"
+                android:textSize="12sp"
+                android:text="@string/terms_of_service"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/_78707e"
+                android:textSize="12sp"
+                android:text="@string/shu"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/vip_privacy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/_78707e"
+                android:textSize="12sp"
+                android:text="@string/privacy_policy"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="400dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/r_bg"/>
+
+    <RelativeLayout
+        android:layout_width="257dp"
+        android:layout_height="283dp"
+        android:layout_centerInParent="true">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="245dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/ro_bg"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/role_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="49dp"
+                android:text="@string/role_rate"
+                android:textSize="23sp"
+                android:textStyle="italic|bold" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/role_edit"
+                android:layout_width="227dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/f7ecf4"
+                android:gravity="start"
+                android:hint="@string/role_edit_hint"
+                android:inputType="textMultiLine"
+                android:maxLength="60"
+                android:maxLines="4"
+                android:minHeight="71dp"
+                android:padding="5dp"
+                android:scrollbars="vertical"
+                android:textColor="@color/_1d1128"
+                android:textColorHint="@color/_1d112850"
+                android:textSize="12sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/role_submit"
+                android:layout_width="188dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_r21_gff93e6_af60ff"
+                android:gravity="center"
+                android:text="@string/submit"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="italic|bold" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/role_head"
+            android:layout_width="77dp"
+            android:layout_height="77dp"
+            android:padding="1dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shape_role"
+            android:scaleType="centerCrop"/>
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/role_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:src="@drawable/r_close"
+        android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>

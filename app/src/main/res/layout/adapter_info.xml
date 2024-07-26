@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginTop="15dp"
+    android:padding="2dp"
+    android:id="@+id/info_view"
+    android:layout_width="101dp"
+    android:layout_height="133dp">
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/info_image"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/in_bg"
+        app:round="5dp"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/info_expand"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/in_sq"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="6dp"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/info_price_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:gravity="center_vertical"
+        tools:ignore="RelativeOverlap">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/in_lock"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center_vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/in_he"
+                android:drawablePadding="2dp"
+                android:id="@+id/info_heart"
+                android:textSize="10sp"
+                android:textColor="@color/white"
+                android:text="500"
+                tools:ignore="SmallSp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white50"
+                android:textSize="12sp"
+                android:text="@string/xie"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/info_coin"
+                android:drawableStart="@drawable/in_di"
+                android:drawablePadding="2dp"
+                android:textSize="10sp"
+                android:textColor="@color/white"
+                android:text="500"
+                tools:ignore="SmallSp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/info_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="9dp"
+        android:src="@drawable/in_ccc"/>
+
+</RelativeLayout>

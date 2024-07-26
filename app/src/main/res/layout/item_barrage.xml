@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="26dp">
+    
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/barrage_text"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:paddingStart="5dp"
+        android:maxLength="60"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:paddingEnd="5dp"
+        android:gravity="center"
+        android:background="@color/_562e7870"
+        android:textColor="@color/white"
+        android:textSize="12sp"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

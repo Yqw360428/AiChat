@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="143dp"
+    android:layout_height="64dp"
+    android:layout_marginTop="15dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="143dp"
+        android:background="@drawable/si7"
+        android:layout_height="64dp">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="93dp"
+            android:layout_height="39dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/si222"
+            android:id="@+id/sign2_icon"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/sign2_coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="sans-serif-black"
+            android:rotation="10"
+            android:text="x99"
+            android:textColor="@color/white"
+            android:textSize="8sp"
+            tools:ignore="SmallSp" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/si_check1"
+            android:visibility="gone"
+            android:id="@+id/sign2_check"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

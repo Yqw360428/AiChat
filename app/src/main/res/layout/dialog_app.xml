@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg1"
+    android:layout_height="506dp">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg2"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="145dp"
+        android:layout_centerHorizontal="true">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/app_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="38dp"
+            android:layout_marginStart="15dp"
+            android:textStyle="bold|italic"
+            android:textColor="@color/_1d1128"
+            android:textSize="15sp"
+            android:text="@string/do_you_like_us"
+            android:textAllCaps="true"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/_1d112850"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:text="@string/app_hint" />
+
+        <com.hedgehog.ratingbar.RatingBar
+            android:id="@+id/app_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:starEmpty="@drawable/role_n"
+            app:starFill="@drawable/role_y"
+            app:halfstart="false"
+            app:starImagePadding="5dp"
+            app:starImageHeight="38dp"
+            app:starImageWidth="38dp"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/app_rate"
+            android:layout_width="188dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/shape_r21_gff93e6_af60ff"
+            android:gravity="center"
+            android:textStyle="bold|italic"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:text="@string/rate_now"
+            android:textAllCaps="true"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/app_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/noi3"/>
+
+</RelativeLayout>

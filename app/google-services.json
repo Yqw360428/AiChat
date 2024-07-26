@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "591474445859",
+    "project_id": "aidemo-f0d67",
+    "storage_bucket": "aidemo-f0d67.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:591474445859:android:c9ba034aca641e610aeb96",
+        "android_client_info": {
+          "package_name": "com.supremebeing.phoneanti.aichat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBG9Lk_OWML6uMhAC2EbJD5xBeqs7TG3Tk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

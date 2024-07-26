@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.help.StoreActivity"
+    android:orientation="vertical"
+    android:background="@drawable/shape_270_562e78_050505"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/airfool_2"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            android:layout_centerVertical="true"
+            android:text="@string/store"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/store_coin"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_toStartOf="@id/store_close"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_marginEnd="15dp"
+            android:drawableStart="@drawable/m_di"
+            android:drawablePadding="8dp"
+            android:background="@drawable/shape_r18_white20"
+            tools:ignore="RelativeOverlap" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/store_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/close"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/recharge_top"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/st_bg">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="112dp"
+            android:layout_height="77dp"
+            android:orientation="vertical"
+            android:background="@drawable/shape_r8_white"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentEnd="true"
+            android:padding="5dp"
+            android:layout_alignParentBottom="true">
+            
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:background="@drawable/shape_r6_white"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/st"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/store_top_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/_562e78"
+                    android:textSize="14sp"
+                    android:text="104"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/store_price"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/shape_r8_gff93e6_af60ff"
+                android:gravity="center"
+                android:textStyle="bold|italic"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:text="$1.99"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_store"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="17dp"
+        android:layout_weight="1"/>
+
+    <RelativeLayout
+        android:id="@+id/store_watch"
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/st_w"
+        android:layout_width="335dp"
+        android:layout_height="80dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="71dp"
+            android:layout_height="28dp"
+            android:background="@drawable/st_b"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="25dp"
+            android:layout_alignParentEnd="true"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:drawableStart="@drawable/st_v"
+                android:drawablePadding="3dp"
+                android:textStyle="bold|italic"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:text="@string/watch"
+                tools:ignore="SmallSp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/store_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                tools:ignore="SmallSp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </RelativeLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

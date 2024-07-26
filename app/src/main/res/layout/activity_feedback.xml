@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.help.FeedBackActivity"
+    android:background="@drawable/shape_270_562e78_050505"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/airfool_2"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            android:layout_centerVertical="true"
+            android:text="@string/feedback"
+            tools:ignore="RelativeOverlap" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/feed_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/close"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/feed_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="195dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/shape_r15_white15"
+        android:padding="20dp"
+        android:gravity="start"
+        android:textColorHint="@color/_78707e"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:hint="@string/please_enter"/>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    
+    
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/feed_submit"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+        android:gravity="center"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/shape_r34_562e78"
+        android:fontFamily="@font/airfool_2"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:text="@string/submit"/>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

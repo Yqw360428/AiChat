@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.start.RegisterActivity"
+    android:background="@drawable/shape_270_562e78_050505"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/l_back"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/register_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/airfool_2"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            tools:ignore="RelativeOverlap" />
+
+    </RelativeLayout>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/register_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="0dp"
+        android:fontFamily="@font/airfool_2"
+        android:textColor="@color/white"
+        android:textSize="35sp"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/register_name"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/shape_r15_3f3447"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:singleLine="true"
+            android:hint="@string/your_name"
+            android:maxLength="15"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textColorHint="@color/bdbdbe"/>
+
+        <RelativeLayout
+            android:id="@+id/register_date"
+            android:visibility="gone"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/shape_r15_s1_ff93e6_white30"/>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.aigestudio.wheelpicker.WheelPicker
+                    android:id="@+id/wheel_month"
+                    app:wheel_item_text_color="@color/bdbdbe"
+                    app:wheel_atmospheric="true"
+                    app:wheel_visible_item_count="5"
+                    app:wheel_item_space="50dp"
+                    app:wheel_selected_item_text_color="@color/white"
+                    app:wheel_item_text_size="16sp"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"/>
+
+                <com.aigestudio.wheelpicker.widgets.WheelDayPicker
+                    android:id="@+id/wheel_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:wheel_item_text_color="@color/bdbdbe"
+                    app:wheel_item_space="50dp"
+                    app:wheel_visible_item_count="5"
+                    app:wheel_atmospheric="true"
+                    app:wheel_selected_item_text_color="@color/white"
+                    app:wheel_item_text_size="16sp"
+                    android:layout_weight="1"/>
+
+                <com.aigestudio.wheelpicker.widgets.WheelYearPicker
+                    android:id="@+id/wheel_year"
+                    android:layout_width="100dp"
+                    app:wheel_item_text_color="@color/bdbdbe"
+                    app:wheel_item_space="50dp"
+                    app:wheel_atmospheric="true"
+                    app:wheel_visible_item_count="5"
+                    app:wheel_selected_item_text_color="@color/white"
+                    app:wheel_item_text_size="16sp"
+                    android:layout_height="wrap_content"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/register_email"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_r15_3f3447"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:singleLine="true"
+            android:maxLength="30"
+            android:hint="@string/your_email"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textColorHint="@color/bdbdbe"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/register_pwd"
+            android:visibility="gone"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_r15_3f3447"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:singleLine="true"
+            android:hint="@string/your_password"
+            android:maxLength="20"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textColorHint="@color/bdbdbe"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/register_btn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/shape_r34_562e78"
+        android:gravity="center"
+        android:fontFamily="@font/airfool_2"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:text="@string/continue_"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

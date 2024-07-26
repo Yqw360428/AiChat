@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_marginStart="3dp"
+    android:layout_marginEnd="3dp"
+    android:background="@drawable/shape_r10_f484ff"
+    android:gravity="center_horizontal"
+    android:layout_marginTop="26dp"
+    android:layout_width="match_parent"
+    android:layout_height="144dp">
+
+    <RelativeLayout
+        android:id="@+id/recharge_icon"
+        android:layout_width="89dp"
+        android:layout_height="74dp"
+        android:background="@drawable/st1"
+        android:layout_marginTop="15dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/recharge_coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:text="x200"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+    
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/recharge_price"
+        android:layout_width="80dp"
+        android:layout_height="25dp"
+        android:background="@drawable/shape_r13_562e78_s1_white"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="12sp"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
